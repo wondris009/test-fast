@@ -3,9 +3,13 @@ plugins {
     kotlin("plugin.spring") version "1.9.25"
     id("org.springframework.boot") version "3.3.4"
     id("io.spring.dependency-management") version "1.1.6"
+
+    groovy
+    idea
+    java
 }
 
-group = "cz.sg"
+group = "cz.sg.testfast"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -24,8 +28,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
 
     implementation("io.github.oshai:kotlin-logging:7.0.0")
-//    implementation("ch.qos.logback:logback-classic:1.5.8")
-
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

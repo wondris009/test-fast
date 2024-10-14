@@ -9,7 +9,7 @@ class LightBean {
     init {
         log.info { "Beginning construction..." }
         try {
-            Thread.sleep(2000)
+            Thread.sleep(100)
         } catch (ignored: InterruptedException) {
         }
         log.info { "Construction complete" }
